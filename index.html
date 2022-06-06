@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>UNSPLASH Project</title>
+    <link rel="stylesheet" href="./scss/index.scss">
+  </head>
+  <header class="header-section">
+    <div class="header-title">
+      <h2 class="title">Welcome to my first JS project</h2>
+    </div>
+  </header>
+
+  <body>
+    <div class="main-section">
+      <div class="main-title">
+        <h1 class="title2">UNSPLASH</h1>
+    <div id="my-js-tabs">
+      <nav class="js-tabs__nav">
+        <ul class="js-tabs__tabs-container">
+          <li class="js-tabs__tab active">Zdjęcia</li>
+          <li class="js-tabs__tab">Kolekcje</li>
+          <li class="js-tabs__tab">Użytkownicy</li>
+        </ul>
+        <div class="js-tabs__marker"></div>
+      </nav>
+      <ul class="js-tabs__content-container">
+        <li class="js-tabs__content active" id="photos-tab">
+          <div class="photos-tab__searchbar">
+            <input class="photos-searchbar" placeholder="Wpisz nazwę zdjęcia" />
+            <select class="photos-select">
+              <option value="">Brak</option>
+              <option value="black_and_white">Czarno Białe</option>
+              <option value="black">Czarne</option>
+              <option value="white">Białe</option>
+            </select>
+            <button class="photos-button">SZUKAJ</button>
+          </div>
+          <div class="photos-tab__results"></div>
+        </li>
+        <li class="js-tabs__content" id="collections-tab">
+          <div class="collections-tab__searchbar">
+            <div class="autocomplete">
+              <input class="collection-searchbar" placeholder="Wpisz nazwę zdjęcia" />
+              <div class="autocomplete__results"></div>
+            </div>
+          </div>
+          <div class="collections-tab__results"></div>
+        </li>
+        <div class="js-tabs__content" id="users-tab">
+          <div class="users-tab__searchbar">
+            <input class="user-searchbar" placeholder="Wpisz nazwę użytkownika" />
+            <div class="autocomplete__results"></div>
+          </div>
+          <div class="users-tab__results"></div>
+          <div class="likedpictures__results"></div>
+        </div>
+        </li>
+      </div>
+  </div>
+  </div>
+    </body>
+</html>
